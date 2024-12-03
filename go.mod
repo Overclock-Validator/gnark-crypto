@@ -1,4 +1,4 @@
-module github.com/consensys/gnark-crypto
+module github.com/Overclock-Validator/gnark-crypto
 
 go 1.22
 
