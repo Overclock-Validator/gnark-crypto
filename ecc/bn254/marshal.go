@@ -1127,11 +1127,11 @@ func (p *G2Affine) setBytes(buf []byte, subGroupCheck bool) (int, error) {
 	mData := buf[0] & mMask
 
 	// check buffer size
-	if mData == mUncompressed {
+	/*if mData == mUncompressed {
 		if len(buf) < SizeOfG2AffineUncompressed {
 			return 0, io.ErrShortBuffer
 		}
-	}
+	}*/
 
 	// infinity encoded, we still check that the buffer is full of zeroes.
 	if mData == mCompressedInfinity {
@@ -1144,7 +1144,7 @@ func (p *G2Affine) setBytes(buf []byte, subGroupCheck bool) (int, error) {
 	}
 
 	// uncompressed point
-	if mData == mUncompressed {
+	/*if mData == mUncompressed {
 		// read X and Y coordinates
 		// p.X.A1 | p.X.A0
 		if err := p.X.A1.SetBytesCanonical(buf[:fp.Bytes]); err != nil {
@@ -1167,7 +1167,7 @@ func (p *G2Affine) setBytes(buf []byte, subGroupCheck bool) (int, error) {
 		}
 
 		return SizeOfG2AffineUncompressed, nil
-	}
+	}*/
 
 	// we have a compressed coordinate
 	// we need to
