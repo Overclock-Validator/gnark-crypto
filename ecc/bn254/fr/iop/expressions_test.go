@@ -19,7 +19,7 @@ package iop
 import (
 	"testing"
 
-	"github.com/consensys/gnark-crypto/ecc/bn254/fr"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bn254/fr"
 )
 
 func TestEvaluate(t *testing.T) {

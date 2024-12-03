@@ -3,8 +3,8 @@ package test_vector_utils
 import (
 	"testing"
 
-	fiatshamir "github.com/consensys/gnark-crypto/fiat-shamir"
-	"github.com/consensys/gnark-crypto/internal/generator/test_vector_utils/small_rational/test_vector_utils"
+	fiatshamir "github.com/Overclock-Validator/gnark-crypto/fiat-shamir"
+	"github.com/Overclock-Validator/gnark-crypto/internal/generator/test_vector_utils/small_rational/test_vector_utils"
 	"github.com/stretchr/testify/assert"
 )
 

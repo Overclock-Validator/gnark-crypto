@@ -18,10 +18,10 @@ package bls24317
 
 import (
 	"crypto/rand"
-	"github.com/consensys/gnark-crypto/ecc"
-	"github.com/consensys/gnark-crypto/ecc/bls24-317/fr"
-	"github.com/consensys/gnark-crypto/ecc/bls24-317/internal/fptower"
-	"github.com/consensys/gnark-crypto/internal/parallel"
+	"github.com/Overclock-Validator/gnark-crypto/ecc"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bls24-317/fr"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bls24-317/internal/fptower"
+	"github.com/Overclock-Validator/gnark-crypto/internal/parallel"
 	"math/big"
 	"runtime"
 )

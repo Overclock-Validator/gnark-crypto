@@ -21,7 +21,7 @@ import (
 	"math/big"
 	"math/bits"
 
-	"github.com/consensys/gnark-crypto/ecc"
+	"github.com/Overclock-Validator/gnark-crypto/ecc"
 )
 
 // Generator returns a generator for Z/2^(log(m))Z

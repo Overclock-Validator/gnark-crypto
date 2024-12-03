@@ -20,8 +20,8 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/consensys/gnark-crypto/ecc/bw6-633/fr"
-	"github.com/consensys/gnark-crypto/ecc/bw6-633/kzg"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bw6-633/fr"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bw6-633/kzg"
 )
 
 func TestLookupVector(t *testing.T) {

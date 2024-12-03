@@ -19,8 +19,8 @@ package fflonk
 import (
 	"crypto/sha256"
 
-	"github.com/consensys/gnark-crypto/ecc/bls24-317/fr"
-	"github.com/consensys/gnark-crypto/ecc/bls24-317/kzg"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bls24-317/fr"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bls24-317/kzg"
 )
 
 // This example demonstrates how to open a list of polynomials on a list of points.

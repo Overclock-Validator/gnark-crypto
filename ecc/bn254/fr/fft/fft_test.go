@@ -21,7 +21,7 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/consensys/gnark-crypto/ecc/bn254/fr"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bn254/fr"
 
 	"github.com/leanovate/gopter"
 	"github.com/leanovate/gopter/gen"

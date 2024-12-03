@@ -21,10 +21,10 @@ import (
 	"hash"
 	"math/big"
 
-	"github.com/consensys/gnark-crypto/ecc/bw6-633/fr"
-	"github.com/consensys/gnark-crypto/ecc/bw6-633/fr/fft"
-	"github.com/consensys/gnark-crypto/ecc/bw6-633/kzg"
-	"github.com/consensys/gnark-crypto/ecc/bw6-633/shplonk"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bw6-633/fr"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bw6-633/fr/fft"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bw6-633/kzg"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bw6-633/shplonk"
 )
 
 var (

@@ -18,7 +18,7 @@ package poseidon2
 
 import (
 	"errors"
-	"github.com/consensys/gnark-crypto/ecc/bls24-315/fr"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bls24-315/fr"
 	"golang.org/x/crypto/sha3"
 )
 

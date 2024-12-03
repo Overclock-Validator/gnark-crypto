@@ -17,7 +17,7 @@
 package polynomial
 
 import (
-	"github.com/consensys/gnark-crypto/ecc/bls24-317/fr"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bls24-317/fr"
 	"github.com/leanovate/gopter"
 	"github.com/leanovate/gopter/gen"
 	"github.com/leanovate/gopter/prop"

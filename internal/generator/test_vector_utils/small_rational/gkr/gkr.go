@@ -18,12 +18,12 @@ package gkr
 
 import (
 	"fmt"
-	fiatshamir "github.com/consensys/gnark-crypto/fiat-shamir"
-	"github.com/consensys/gnark-crypto/internal/generator/test_vector_utils/small_rational"
-	"github.com/consensys/gnark-crypto/internal/generator/test_vector_utils/small_rational/polynomial"
-	"github.com/consensys/gnark-crypto/internal/generator/test_vector_utils/small_rational/sumcheck"
-	"github.com/consensys/gnark-crypto/internal/parallel"
-	"github.com/consensys/gnark-crypto/utils"
+	fiatshamir "github.com/Overclock-Validator/gnark-crypto/fiat-shamir"
+	"github.com/Overclock-Validator/gnark-crypto/internal/generator/test_vector_utils/small_rational"
+	"github.com/Overclock-Validator/gnark-crypto/internal/generator/test_vector_utils/small_rational/polynomial"
+	"github.com/Overclock-Validator/gnark-crypto/internal/generator/test_vector_utils/small_rational/sumcheck"
+	"github.com/Overclock-Validator/gnark-crypto/internal/parallel"
+	"github.com/Overclock-Validator/gnark-crypto/utils"
 	"math/big"
 	"strconv"
 	"sync"

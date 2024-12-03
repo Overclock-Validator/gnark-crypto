@@ -17,7 +17,7 @@
 package fptower
 
 import (
-	"github.com/consensys/gnark-crypto/ecc/bn254/fp"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bn254/fp"
 	"math/big"
 )
 

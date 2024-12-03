@@ -27,10 +27,10 @@ import (
 	"io"
 	"math/big"
 
-	"github.com/consensys/gnark-crypto/ecc/bn254"
-	"github.com/consensys/gnark-crypto/ecc/bn254/fp"
-	"github.com/consensys/gnark-crypto/ecc/bn254/fr"
-	"github.com/consensys/gnark-crypto/signature"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bn254"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bn254/fp"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bn254/fr"
+	"github.com/Overclock-Validator/gnark-crypto/signature"
 )
 
 const (

@@ -17,7 +17,7 @@
 package bls24315
 
 import (
-	"github.com/consensys/gnark-crypto/ecc/bls24-315/fp"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bls24-315/fp"
 	"github.com/leanovate/gopter"
 	"github.com/leanovate/gopter/prop"
 	"math/rand"

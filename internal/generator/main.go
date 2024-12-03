@@ -7,33 +7,33 @@ import (
 	"path/filepath"
 	"sync"
 
+	"github.com/Overclock-Validator/gnark-crypto/field/generator"
+	field "github.com/Overclock-Validator/gnark-crypto/field/generator/config"
+	"github.com/Overclock-Validator/gnark-crypto/internal/generator/config"
+	"github.com/Overclock-Validator/gnark-crypto/internal/generator/crypto/hash/mimc"
+	"github.com/Overclock-Validator/gnark-crypto/internal/generator/crypto/hash/poseidon2"
+	"github.com/Overclock-Validator/gnark-crypto/internal/generator/ecc"
+	"github.com/Overclock-Validator/gnark-crypto/internal/generator/ecdsa"
+	"github.com/Overclock-Validator/gnark-crypto/internal/generator/edwards"
+	"github.com/Overclock-Validator/gnark-crypto/internal/generator/edwards/eddsa"
+	"github.com/Overclock-Validator/gnark-crypto/internal/generator/fflonk"
+	"github.com/Overclock-Validator/gnark-crypto/internal/generator/fft"
+	fri "github.com/Overclock-Validator/gnark-crypto/internal/generator/fri/template"
+	"github.com/Overclock-Validator/gnark-crypto/internal/generator/gkr"
+	"github.com/Overclock-Validator/gnark-crypto/internal/generator/hash_to_field"
+	"github.com/Overclock-Validator/gnark-crypto/internal/generator/iop"
+	"github.com/Overclock-Validator/gnark-crypto/internal/generator/kzg"
+	"github.com/Overclock-Validator/gnark-crypto/internal/generator/pairing"
+	"github.com/Overclock-Validator/gnark-crypto/internal/generator/pedersen"
+	"github.com/Overclock-Validator/gnark-crypto/internal/generator/permutation"
+	"github.com/Overclock-Validator/gnark-crypto/internal/generator/plookup"
+	"github.com/Overclock-Validator/gnark-crypto/internal/generator/polynomial"
+	"github.com/Overclock-Validator/gnark-crypto/internal/generator/shplonk"
+	"github.com/Overclock-Validator/gnark-crypto/internal/generator/sis"
+	"github.com/Overclock-Validator/gnark-crypto/internal/generator/sumcheck"
+	"github.com/Overclock-Validator/gnark-crypto/internal/generator/test_vector_utils"
+	"github.com/Overclock-Validator/gnark-crypto/internal/generator/tower"
 	"github.com/consensys/bavard"
-	"github.com/consensys/gnark-crypto/field/generator"
-	field "github.com/consensys/gnark-crypto/field/generator/config"
-	"github.com/consensys/gnark-crypto/internal/generator/config"
-	"github.com/consensys/gnark-crypto/internal/generator/crypto/hash/mimc"
-	"github.com/consensys/gnark-crypto/internal/generator/crypto/hash/poseidon2"
-	"github.com/consensys/gnark-crypto/internal/generator/ecc"
-	"github.com/consensys/gnark-crypto/internal/generator/ecdsa"
-	"github.com/consensys/gnark-crypto/internal/generator/edwards"
-	"github.com/consensys/gnark-crypto/internal/generator/edwards/eddsa"
-	"github.com/consensys/gnark-crypto/internal/generator/fflonk"
-	"github.com/consensys/gnark-crypto/internal/generator/fft"
-	fri "github.com/consensys/gnark-crypto/internal/generator/fri/template"
-	"github.com/consensys/gnark-crypto/internal/generator/gkr"
-	"github.com/consensys/gnark-crypto/internal/generator/hash_to_field"
-	"github.com/consensys/gnark-crypto/internal/generator/iop"
-	"github.com/consensys/gnark-crypto/internal/generator/kzg"
-	"github.com/consensys/gnark-crypto/internal/generator/pairing"
-	"github.com/consensys/gnark-crypto/internal/generator/pedersen"
-	"github.com/consensys/gnark-crypto/internal/generator/permutation"
-	"github.com/consensys/gnark-crypto/internal/generator/plookup"
-	"github.com/consensys/gnark-crypto/internal/generator/polynomial"
-	"github.com/consensys/gnark-crypto/internal/generator/shplonk"
-	"github.com/consensys/gnark-crypto/internal/generator/sis"
-	"github.com/consensys/gnark-crypto/internal/generator/sumcheck"
-	"github.com/consensys/gnark-crypto/internal/generator/test_vector_utils"
-	"github.com/consensys/gnark-crypto/internal/generator/tower"
 )
 
 const (
@@ -151,7 +151,7 @@ func main() {
 			assertNoError(poseidon2.Generate(conf, filepath.Join(curveDir, "fr", "poseidon2"), bgen))
 
 			frInfo := config.FieldDependency{
-				FieldPackagePath: "github.com/consensys/gnark-crypto/ecc/" + conf.Name + "/fr",
+				FieldPackagePath: "github.com/Overclock-Validator/gnark-crypto/ecc/" + conf.Name + "/fr",
 				FieldPackageName: "fr",
 				ElementType:      "fr.Element",
 			}
@@ -182,7 +182,7 @@ func main() {
 			assertNoError(iop.Generate(conf, filepath.Join(curveDir, "fr", "iop"), bgen))
 
 			fpInfo := config.FieldDependency{
-				FieldPackagePath: "github.com/consensys/gnark-crypto/ecc/" + conf.Name + "/fp",
+				FieldPackagePath: "github.com/Overclock-Validator/gnark-crypto/ecc/" + conf.Name + "/fp",
 				FieldPackageName: "fp",
 				ElementType:      "fp.Element",
 			}

@@ -19,7 +19,7 @@ package fft
 import (
 	"runtime"
 
-	"github.com/consensys/gnark-crypto/ecc/bw6-761/fr"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bw6-761/fr"
 )
 
 // Option defines option for altering the behavior of FFT methods.

@@ -26,9 +26,9 @@ import (
 
 	"fmt"
 
-	"github.com/consensys/gnark-crypto/ecc/bw6-633/fr"
-	"github.com/consensys/gnark-crypto/ecc/bw6-633/twistededwards"
-	"github.com/consensys/gnark-crypto/hash"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bw6-633/fr"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bw6-633/twistededwards"
+	"github.com/Overclock-Validator/gnark-crypto/hash"
 )
 
 func Example() {

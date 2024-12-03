@@ -23,9 +23,9 @@ import (
 	"io"
 	"math/big"
 
-	"github.com/consensys/gnark-crypto/ecc/bls12-381/fr"
-	"github.com/consensys/gnark-crypto/ecc/bls12-381/twistededwards"
-	"github.com/consensys/gnark-crypto/signature"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bls12-381/fr"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bls12-381/twistededwards"
+	"github.com/Overclock-Validator/gnark-crypto/signature"
 	"golang.org/x/crypto/blake2b"
 )
 

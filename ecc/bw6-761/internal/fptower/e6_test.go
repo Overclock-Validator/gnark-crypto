@@ -18,7 +18,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/consensys/gnark-crypto/ecc/bw6-761/fp"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bw6-761/fp"
 	"github.com/leanovate/gopter"
 	"github.com/leanovate/gopter/prop"
 )

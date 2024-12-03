@@ -19,7 +19,7 @@ package shplonk
 import (
 	"io"
 
-	"github.com/consensys/gnark-crypto/ecc/bw6-633"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bw6-633"
 )
 
 func (proof *OpeningProof) ReadFrom(r io.Reader) (int64, error) {

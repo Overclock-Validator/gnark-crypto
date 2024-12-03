@@ -20,7 +20,7 @@ import (
 	"math/big"
 	"sync"
 
-	"github.com/consensys/gnark-crypto/ecc/bls12-381/fr"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bls12-381/fr"
 )
 
 // CurveParams curve parameters: ax^2 + y^2 = 1 + d*x^2*y^2

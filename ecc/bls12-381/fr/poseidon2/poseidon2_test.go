@@ -19,7 +19,7 @@ package poseidon2
 import (
 	"testing"
 
-	"github.com/consensys/gnark-crypto/ecc/bls12-381/fr"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bls12-381/fr"
 )
 
 func TestExternalMatrix(t *testing.T) {

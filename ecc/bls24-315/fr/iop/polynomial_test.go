@@ -19,8 +19,8 @@ package iop
 import (
 	"testing"
 
-	"github.com/consensys/gnark-crypto/ecc/bls24-315/fr"
-	"github.com/consensys/gnark-crypto/ecc/bls24-315/fr/fft"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bls24-315/fr"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bls24-315/fr/fft"
 
 	"github.com/stretchr/testify/require"
 

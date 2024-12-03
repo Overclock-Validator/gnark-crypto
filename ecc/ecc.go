@@ -31,7 +31,7 @@ import (
 	"math/big"
 	"strings"
 
-	"github.com/consensys/gnark-crypto/internal/generator/config"
+	"github.com/Overclock-Validator/gnark-crypto/internal/generator/config"
 )
 
 // ID represent a unique ID for a curve

@@ -1,7 +1,7 @@
 package fptower
 
 import (
-	"github.com/consensys/gnark-crypto/ecc/bw6-633/fp"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bw6-633/fp"
 	"github.com/leanovate/gopter"
 )
 

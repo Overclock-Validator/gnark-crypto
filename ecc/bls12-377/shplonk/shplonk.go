@@ -21,11 +21,11 @@ import (
 	"hash"
 	"math/big"
 
-	"github.com/consensys/gnark-crypto/ecc"
-	"github.com/consensys/gnark-crypto/ecc/bls12-377"
-	"github.com/consensys/gnark-crypto/ecc/bls12-377/fr"
-	"github.com/consensys/gnark-crypto/ecc/bls12-377/kzg"
-	fiatshamir "github.com/consensys/gnark-crypto/fiat-shamir"
+	"github.com/Overclock-Validator/gnark-crypto/ecc"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bls12-377"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bls12-377/fr"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bls12-377/kzg"
+	fiatshamir "github.com/Overclock-Validator/gnark-crypto/fiat-shamir"
 )
 
 var (

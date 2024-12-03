@@ -28,9 +28,9 @@ import (
 	"github.com/leanovate/gopter"
 	"github.com/leanovate/gopter/prop"
 
-	"github.com/consensys/gnark-crypto/ecc/bw6-633/fp"
-	"github.com/consensys/gnark-crypto/ecc/bw6-633/fr"
-	"github.com/consensys/gnark-crypto/ecc/bw6-633/internal/fptower"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bw6-633/fp"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bw6-633/fr"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bw6-633/internal/fptower"
 )
 
 const (

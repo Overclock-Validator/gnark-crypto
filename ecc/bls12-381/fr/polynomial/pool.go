@@ -19,7 +19,7 @@ package polynomial
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/consensys/gnark-crypto/ecc/bls12-381/fr"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bls12-381/fr"
 	"runtime"
 	"sort"
 	"sync"

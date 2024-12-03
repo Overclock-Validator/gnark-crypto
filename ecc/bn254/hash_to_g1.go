@@ -17,7 +17,7 @@
 package bn254
 
 import (
-	"github.com/consensys/gnark-crypto/ecc/bn254/fp"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bn254/fp"
 )
 
 // MapToCurve1 implements the Shallue and van de Woestijne method, applicable to any elliptic curve in Weierstrass form

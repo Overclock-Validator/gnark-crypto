@@ -24,7 +24,7 @@ import (
 	"strings"
 	"testing"
 
-	field "github.com/consensys/gnark-crypto/field/generator/config"
+	field "github.com/Overclock-Validator/gnark-crypto/field/generator/config"
 	"github.com/stretchr/testify/require"
 	"golang.org/x/sync/errgroup"
 )

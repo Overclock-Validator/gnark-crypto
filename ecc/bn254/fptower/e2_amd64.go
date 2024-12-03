@@ -17,7 +17,7 @@
 package fptower
 
 import (
-	"github.com/consensys/gnark-crypto/ecc/bn254/fp"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bn254/fp"
 )
 
 // q + r'.r = 1, i.e., qInvNeg = - q⁻¹ mod r

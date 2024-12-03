@@ -27,9 +27,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bls12-377/fr"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bls12-377/fr/fft"
 	"github.com/bits-and-blooms/bitset"
-	"github.com/consensys/gnark-crypto/ecc/bls12-377/fr"
-	"github.com/consensys/gnark-crypto/ecc/bls12-377/fr/fft"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

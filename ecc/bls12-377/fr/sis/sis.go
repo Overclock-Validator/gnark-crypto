@@ -22,10 +22,10 @@ import (
 	"math/big"
 	"math/bits"
 
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bls12-377/fr"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bls12-377/fr/fft"
+	"github.com/Overclock-Validator/gnark-crypto/internal/parallel"
 	"github.com/bits-and-blooms/bitset"
-	"github.com/consensys/gnark-crypto/ecc/bls12-377/fr"
-	"github.com/consensys/gnark-crypto/ecc/bls12-377/fr/fft"
-	"github.com/consensys/gnark-crypto/internal/parallel"
 	"golang.org/x/crypto/blake2b"
 )
 

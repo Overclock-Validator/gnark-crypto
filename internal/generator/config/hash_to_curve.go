@@ -3,7 +3,7 @@ package config
 import (
 	"math/big"
 
-	field "github.com/consensys/gnark-crypto/field/generator/config"
+	field "github.com/Overclock-Validator/gnark-crypto/field/generator/config"
 )
 
 type FieldElementToCurvePoint string

@@ -18,8 +18,8 @@ package test_vector_utils
 
 import (
 	"fmt"
-	"github.com/consensys/gnark-crypto/ecc/bn254/fr"
-	"github.com/consensys/gnark-crypto/ecc/bn254/fr/polynomial"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bn254/fr"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bn254/fr/polynomial"
 	"hash"
 	"reflect"
 	"strings"

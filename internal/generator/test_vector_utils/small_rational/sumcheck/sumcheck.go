@@ -18,9 +18,9 @@ package sumcheck
 
 import (
 	"fmt"
-	fiatshamir "github.com/consensys/gnark-crypto/fiat-shamir"
-	"github.com/consensys/gnark-crypto/internal/generator/test_vector_utils/small_rational"
-	"github.com/consensys/gnark-crypto/internal/generator/test_vector_utils/small_rational/polynomial"
+	fiatshamir "github.com/Overclock-Validator/gnark-crypto/fiat-shamir"
+	"github.com/Overclock-Validator/gnark-crypto/internal/generator/test_vector_utils/small_rational"
+	"github.com/Overclock-Validator/gnark-crypto/internal/generator/test_vector_utils/small_rational/polynomial"
 	"strconv"
 )
 

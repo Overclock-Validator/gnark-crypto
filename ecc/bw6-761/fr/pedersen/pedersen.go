@@ -19,9 +19,9 @@ package pedersen
 import (
 	"crypto/rand"
 	"errors"
-	"github.com/consensys/gnark-crypto/ecc"
-	curve "github.com/consensys/gnark-crypto/ecc/bw6-761"
-	"github.com/consensys/gnark-crypto/ecc/bw6-761/fr"
+	"github.com/Overclock-Validator/gnark-crypto/ecc"
+	curve "github.com/Overclock-Validator/gnark-crypto/ecc/bw6-761"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bw6-761/fr"
 	"io"
 	"math/big"
 )
@@ -116,7 +116,7 @@ func (pk *ProvingKey) ProveKnowledge(values []fr.Element) (pok curve.G1Affine, e
 	}
 
 	// TODO @gbotrel this will spawn more than one task, see
-	// https://github.com/ConsenSys/gnark-crypto/issues/269
+	// https://github.com/Overclock-Validator/gnark-crypto/issues/269
 	config := ecc.MultiExpConfig{
 		NbTasks: 1, // TODO Experiment
 	}
@@ -134,7 +134,7 @@ func (pk *ProvingKey) Commit(values []fr.Element) (commitment curve.G1Affine, er
 	}
 
 	// TODO @gbotrel this will spawn more than one task, see
-	// https://github.com/ConsenSys/gnark-crypto/issues/269
+	// https://github.com/Overclock-Validator/gnark-crypto/issues/269
 	config := ecc.MultiExpConfig{
 		NbTasks: 1,
 	}
@@ -195,7 +195,7 @@ func BatchProve(pk []ProvingKey, values [][]fr.Element, combinationCoeff fr.Elem
 	}
 
 	// TODO @gbotrel this will spawn more than one task, see
-	// https://github.com/ConsenSys/gnark-crypto/issues/269
+	// https://github.com/Overclock-Validator/gnark-crypto/issues/269
 	config := ecc.MultiExpConfig{
 		NbTasks: 1,
 	}

@@ -17,8 +17,8 @@ package fptower
 import (
 	"math/big"
 
-	"github.com/consensys/gnark-crypto/ecc"
-	"github.com/consensys/gnark-crypto/ecc/bls24-315/fr"
+	"github.com/Overclock-Validator/gnark-crypto/ecc"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bls24-315/fr"
 )
 
 // generator of the curve

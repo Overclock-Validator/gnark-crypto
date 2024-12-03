@@ -20,9 +20,9 @@ import (
 	"crypto/rand"
 	"fmt"
 
-	"github.com/consensys/gnark-crypto/ecc"
-	curve "github.com/consensys/gnark-crypto/ecc/bls12-377"
-	"github.com/consensys/gnark-crypto/ecc/bls12-377/fr"
+	"github.com/Overclock-Validator/gnark-crypto/ecc"
+	curve "github.com/Overclock-Validator/gnark-crypto/ecc/bls12-377"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bls12-377/fr"
 )
 
 // This example demonstrates how to use the Pedersen commitment scheme

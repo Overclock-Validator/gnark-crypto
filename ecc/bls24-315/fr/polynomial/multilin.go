@@ -17,8 +17,8 @@
 package polynomial
 
 import (
-	"github.com/consensys/gnark-crypto/ecc/bls24-315/fr"
-	"github.com/consensys/gnark-crypto/utils"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bls24-315/fr"
+	"github.com/Overclock-Validator/gnark-crypto/utils"
 	"math/bits"
 )
 

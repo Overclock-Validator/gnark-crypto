@@ -43,6 +43,6 @@
 // single field element must be strictly less than the field modulus.
 //
 // See open issues:
-//   - https://github.com/Consensys/gnark-crypto/issues/504
-//   - https://github.com/Consensys/gnark-crypto/issues/485
+//   - https://github.com/Overclock-Validator/gnark-crypto/issues/504
+//   - https://github.com/Overclock-Validator/gnark-crypto/issues/485
 package hash

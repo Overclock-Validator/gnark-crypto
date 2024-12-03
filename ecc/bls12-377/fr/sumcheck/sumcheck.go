@@ -18,9 +18,9 @@ package sumcheck
 
 import (
 	"fmt"
-	"github.com/consensys/gnark-crypto/ecc/bls12-377/fr"
-	"github.com/consensys/gnark-crypto/ecc/bls12-377/fr/polynomial"
-	fiatshamir "github.com/consensys/gnark-crypto/fiat-shamir"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bls12-377/fr"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bls12-377/fr/polynomial"
+	fiatshamir "github.com/Overclock-Validator/gnark-crypto/fiat-shamir"
 	"strconv"
 )
 

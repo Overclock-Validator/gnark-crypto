@@ -18,9 +18,9 @@ package bls12381
 
 import (
 	"errors"
-	"github.com/consensys/gnark-crypto/ecc"
-	"github.com/consensys/gnark-crypto/ecc/bls12-381/fr"
-	"github.com/consensys/gnark-crypto/internal/parallel"
+	"github.com/Overclock-Validator/gnark-crypto/ecc"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bls12-381/fr"
+	"github.com/Overclock-Validator/gnark-crypto/internal/parallel"
 	"math"
 	"runtime"
 )

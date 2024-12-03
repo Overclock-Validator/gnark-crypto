@@ -5,8 +5,8 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/consensys/gnark-crypto/ecc/bn254"
-	"github.com/consensys/gnark-crypto/utils/unsafe"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bn254"
+	"github.com/Overclock-Validator/gnark-crypto/utils/unsafe"
 	"github.com/stretchr/testify/require"
 )
 

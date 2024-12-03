@@ -17,8 +17,8 @@ package bw6633
 import (
 	"errors"
 
-	"github.com/consensys/gnark-crypto/ecc/bw6-633/fp"
-	"github.com/consensys/gnark-crypto/ecc/bw6-633/internal/fptower"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bw6-633/fp"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bw6-633/internal/fptower"
 )
 
 // GT target group of the pairing

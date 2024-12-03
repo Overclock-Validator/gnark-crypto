@@ -17,10 +17,10 @@
 package kzg
 
 import (
-	"github.com/consensys/gnark-crypto/ecc/bw6-633"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bw6-633"
 	"io"
 
-	"github.com/consensys/gnark-crypto/utils/unsafe"
+	"github.com/Overclock-Validator/gnark-crypto/utils/unsafe"
 )
 
 // WriteTo writes binary encoding of the ProvingKey

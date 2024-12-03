@@ -19,7 +19,7 @@ package ecdsa
 import (
 	"crypto/rand"
 	"crypto/sha256"
-	"github.com/consensys/gnark-crypto/ecc/secp256k1/fr"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/secp256k1/fr"
 	"math/big"
 	"testing"
 

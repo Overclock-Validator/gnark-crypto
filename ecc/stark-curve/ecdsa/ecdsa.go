@@ -27,10 +27,10 @@ import (
 	"io"
 	"math/big"
 
-	"github.com/consensys/gnark-crypto/ecc/stark-curve"
-	"github.com/consensys/gnark-crypto/ecc/stark-curve/fp"
-	"github.com/consensys/gnark-crypto/ecc/stark-curve/fr"
-	"github.com/consensys/gnark-crypto/signature"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/stark-curve"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/stark-curve/fp"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/stark-curve/fr"
+	"github.com/Overclock-Validator/gnark-crypto/signature"
 )
 
 const (

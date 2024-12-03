@@ -22,11 +22,11 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/consensys/gnark-crypto/ecc"
-	"github.com/consensys/gnark-crypto/ecc/bls24-315"
-	"github.com/consensys/gnark-crypto/ecc/bls24-315/fr"
-	"github.com/consensys/gnark-crypto/ecc/bls24-315/kzg"
-	"github.com/consensys/gnark-crypto/utils/testutils"
+	"github.com/Overclock-Validator/gnark-crypto/ecc"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bls24-315"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bls24-315/fr"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bls24-315/kzg"
+	"github.com/Overclock-Validator/gnark-crypto/utils/testutils"
 	"github.com/stretchr/testify/require"
 )
 

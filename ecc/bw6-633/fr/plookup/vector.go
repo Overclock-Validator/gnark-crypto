@@ -23,10 +23,10 @@ import (
 	"math/bits"
 	"sort"
 
-	"github.com/consensys/gnark-crypto/ecc/bw6-633/fr"
-	"github.com/consensys/gnark-crypto/ecc/bw6-633/fr/fft"
-	"github.com/consensys/gnark-crypto/ecc/bw6-633/kzg"
-	fiatshamir "github.com/consensys/gnark-crypto/fiat-shamir"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bw6-633/fr"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bw6-633/fr/fft"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bw6-633/kzg"
+	fiatshamir "github.com/Overclock-Validator/gnark-crypto/fiat-shamir"
 )
 
 var (

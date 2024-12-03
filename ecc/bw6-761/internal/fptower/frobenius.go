@@ -15,7 +15,7 @@
 package fptower
 
 import (
-	"github.com/consensys/gnark-crypto/ecc/bw6-761/fp"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bw6-761/fp"
 )
 
 var _frobA = fp.Element{

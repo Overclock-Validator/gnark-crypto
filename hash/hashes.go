@@ -17,13 +17,13 @@ package hash
 import (
 	"hash"
 
-	bls377 "github.com/consensys/gnark-crypto/ecc/bls12-377/fr/mimc"
-	bls381 "github.com/consensys/gnark-crypto/ecc/bls12-381/fr/mimc"
-	bls315 "github.com/consensys/gnark-crypto/ecc/bls24-315/fr/mimc"
-	bls317 "github.com/consensys/gnark-crypto/ecc/bls24-317/fr/mimc"
-	bn254 "github.com/consensys/gnark-crypto/ecc/bn254/fr/mimc"
-	bw633 "github.com/consensys/gnark-crypto/ecc/bw6-633/fr/mimc"
-	bw761 "github.com/consensys/gnark-crypto/ecc/bw6-761/fr/mimc"
+	bls377 "github.com/Overclock-Validator/gnark-crypto/ecc/bls12-377/fr/mimc"
+	bls381 "github.com/Overclock-Validator/gnark-crypto/ecc/bls12-381/fr/mimc"
+	bls315 "github.com/Overclock-Validator/gnark-crypto/ecc/bls24-315/fr/mimc"
+	bls317 "github.com/Overclock-Validator/gnark-crypto/ecc/bls24-317/fr/mimc"
+	bn254 "github.com/Overclock-Validator/gnark-crypto/ecc/bn254/fr/mimc"
+	bw633 "github.com/Overclock-Validator/gnark-crypto/ecc/bw6-633/fr/mimc"
+	bw761 "github.com/Overclock-Validator/gnark-crypto/ecc/bw6-761/fr/mimc"
 )
 
 // Hash defines an unique identifier for a hash function.

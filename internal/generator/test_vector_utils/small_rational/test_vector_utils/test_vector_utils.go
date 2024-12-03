@@ -18,8 +18,8 @@ package test_vector_utils
 
 import (
 	"fmt"
-	"github.com/consensys/gnark-crypto/internal/generator/test_vector_utils/small_rational"
-	"github.com/consensys/gnark-crypto/internal/generator/test_vector_utils/small_rational/polynomial"
+	"github.com/Overclock-Validator/gnark-crypto/internal/generator/test_vector_utils/small_rational"
+	"github.com/Overclock-Validator/gnark-crypto/internal/generator/test_vector_utils/small_rational/polynomial"
 	"hash"
 	"reflect"
 )

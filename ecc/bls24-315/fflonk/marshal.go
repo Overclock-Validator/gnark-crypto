@@ -19,7 +19,7 @@ package fflonk
 import (
 	"io"
 
-	"github.com/consensys/gnark-crypto/ecc/bls24-315"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bls24-315"
 )
 
 // ReadFrom decodes OpeningProof data from reader.

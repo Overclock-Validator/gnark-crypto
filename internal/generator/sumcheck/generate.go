@@ -1,9 +1,10 @@
 package sumcheck
 
 import (
-	"github.com/consensys/bavard"
-	"github.com/consensys/gnark-crypto/internal/generator/config"
 	"path/filepath"
+
+	"github.com/Overclock-Validator/gnark-crypto/internal/generator/config"
+	"github.com/consensys/bavard"
 )
 
 func Generate(conf config.FieldDependency, baseDir string, bgen *bavard.BatchGenerator) error {

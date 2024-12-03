@@ -17,8 +17,8 @@ package bls24315
 import (
 	"errors"
 
-	"github.com/consensys/gnark-crypto/ecc/bls24-315/fp"
-	"github.com/consensys/gnark-crypto/ecc/bls24-315/internal/fptower"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bls24-315/fp"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bls24-315/internal/fptower"
 )
 
 // GT target group of the pairing

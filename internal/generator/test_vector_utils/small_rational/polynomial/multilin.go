@@ -17,8 +17,8 @@
 package polynomial
 
 import (
-	"github.com/consensys/gnark-crypto/internal/generator/test_vector_utils/small_rational"
-	"github.com/consensys/gnark-crypto/utils"
+	"github.com/Overclock-Validator/gnark-crypto/internal/generator/test_vector_utils/small_rational"
+	"github.com/Overclock-Validator/gnark-crypto/utils"
 	"math/bits"
 )
 

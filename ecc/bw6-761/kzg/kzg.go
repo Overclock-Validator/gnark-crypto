@@ -22,12 +22,12 @@ import (
 	"math/big"
 	"sync"
 
-	"github.com/consensys/gnark-crypto/ecc"
-	"github.com/consensys/gnark-crypto/ecc/bw6-761"
-	"github.com/consensys/gnark-crypto/ecc/bw6-761/fr"
-	"github.com/consensys/gnark-crypto/fiat-shamir"
+	"github.com/Overclock-Validator/gnark-crypto/ecc"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bw6-761"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bw6-761/fr"
+	"github.com/Overclock-Validator/gnark-crypto/fiat-shamir"
 
-	"github.com/consensys/gnark-crypto/internal/parallel"
+	"github.com/Overclock-Validator/gnark-crypto/internal/parallel"
 )
 
 var (

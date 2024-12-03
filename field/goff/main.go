@@ -25,7 +25,7 @@
 // The generated code has not been audited for all moduli (only bn254 and bls12-381) and is provided as-is. In particular, there is no security guarantees such as constant time implementation or side-channel attack resistance.
 package main
 
-import "github.com/consensys/gnark-crypto/field/goff/cmd"
+import "github.com/Overclock-Validator/gnark-crypto/field/goff/cmd"
 
 func main() {
 	cmd.Execute()

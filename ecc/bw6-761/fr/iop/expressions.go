@@ -18,8 +18,8 @@ package iop
 
 import (
 	"errors"
-	"github.com/consensys/gnark-crypto/ecc/bw6-761/fr"
-	"github.com/consensys/gnark-crypto/internal/parallel"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bw6-761/fr"
+	"github.com/Overclock-Validator/gnark-crypto/internal/parallel"
 	"math/bits"
 )
 

@@ -19,7 +19,7 @@ package ecdsa
 import (
 	"crypto/subtle"
 	"errors"
-	"github.com/consensys/gnark-crypto/ecc/bw6-633/fr"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bw6-633/fr"
 	"io"
 	"math/big"
 )

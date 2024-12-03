@@ -22,9 +22,9 @@ import (
 	"math/rand/v2"
 	"testing"
 
-	"github.com/consensys/gnark-crypto/ecc/bls12-381/internal/fptower"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bls12-381/internal/fptower"
 
-	"github.com/consensys/gnark-crypto/ecc/bls12-381/fr"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bls12-381/fr"
 	"github.com/leanovate/gopter"
 	"github.com/leanovate/gopter/prop"
 )

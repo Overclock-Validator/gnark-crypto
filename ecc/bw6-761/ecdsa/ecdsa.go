@@ -26,10 +26,10 @@ import (
 	"io"
 	"math/big"
 
-	"github.com/consensys/gnark-crypto/ecc/bw6-761"
-	"github.com/consensys/gnark-crypto/ecc/bw6-761/fp"
-	"github.com/consensys/gnark-crypto/ecc/bw6-761/fr"
-	"github.com/consensys/gnark-crypto/signature"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bw6-761"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bw6-761/fp"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bw6-761/fr"
+	"github.com/Overclock-Validator/gnark-crypto/signature"
 )
 
 const (

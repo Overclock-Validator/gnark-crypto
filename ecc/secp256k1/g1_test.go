@@ -24,9 +24,9 @@ import (
 
 	crand "crypto/rand"
 
-	"github.com/consensys/gnark-crypto/ecc/secp256k1/fp"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/secp256k1/fp"
 
-	"github.com/consensys/gnark-crypto/ecc/secp256k1/fr"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/secp256k1/fr"
 	"github.com/leanovate/gopter"
 	"github.com/leanovate/gopter/prop"
 )

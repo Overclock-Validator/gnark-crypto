@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/consensys/gnark-crypto/ecc/stark-curve/fp"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/stark-curve/fp"
 )
 
 func TestPedersen(t *testing.T) {

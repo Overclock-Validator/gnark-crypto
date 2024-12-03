@@ -28,5 +28,5 @@ package hash_to_field
 import (
 	_ "hash"
 
-	_ "github.com/consensys/gnark-crypto/ecc/bw6-761/fr"
+	_ "github.com/Overclock-Validator/gnark-crypto/ecc/bw6-761/fr"
 )

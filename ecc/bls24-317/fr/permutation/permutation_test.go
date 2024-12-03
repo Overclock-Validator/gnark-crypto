@@ -22,8 +22,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/consensys/gnark-crypto/ecc/bls24-317/fr"
-	"github.com/consensys/gnark-crypto/ecc/bls24-317/kzg"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bls24-317/fr"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bls24-317/kzg"
 )
 
 func TestProof(t *testing.T) {

@@ -19,7 +19,7 @@ package hash_to_field
 import (
 	"testing"
 
-	"github.com/consensys/gnark-crypto/ecc/bls12-381/fp"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/bls12-381/fp"
 )
 
 func TestHashInterface(t *testing.T) {

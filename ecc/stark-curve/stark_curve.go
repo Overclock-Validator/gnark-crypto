@@ -29,8 +29,8 @@
 package starkcurve
 
 import (
-	"github.com/consensys/gnark-crypto/ecc"
-	"github.com/consensys/gnark-crypto/ecc/stark-curve/fp"
+	"github.com/Overclock-Validator/gnark-crypto/ecc"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/stark-curve/fp"
 )
 
 // ID stark_curve ID

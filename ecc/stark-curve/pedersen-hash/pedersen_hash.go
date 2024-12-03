@@ -3,8 +3,8 @@ package pedersenhash
 import (
 	"math/big"
 
-	starkcurve "github.com/consensys/gnark-crypto/ecc/stark-curve"
-	"github.com/consensys/gnark-crypto/ecc/stark-curve/fp"
+	starkcurve "github.com/Overclock-Validator/gnark-crypto/ecc/stark-curve"
+	"github.com/Overclock-Validator/gnark-crypto/ecc/stark-curve/fp"
 )
 
 const nibbleCount = fp.Bits / 4
