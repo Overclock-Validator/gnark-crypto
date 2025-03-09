@@ -1134,14 +1134,14 @@ func (p *G2Affine) setBytes(buf []byte, subGroupCheck bool) (int, error) {
 	}*/
 
 	// infinity encoded, we still check that the buffer is full of zeroes.
-	if mData == mCompressedInfinity {
+	/*if mData == mCompressedInfinity {
 		if !isZeroed(buf[0] & ^mMask, buf[1:SizeOfG2AffineCompressed]) {
 			return 0, ErrInvalidInfinityEncoding
 		}
 		p.X.SetZero()
 		p.Y.SetZero()
 		return SizeOfG2AffineCompressed, nil
-	}
+	}*/
 
 	// uncompressed point
 	/*if mData == mUncompressed {
