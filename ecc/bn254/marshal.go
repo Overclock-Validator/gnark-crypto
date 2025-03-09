@@ -867,51 +867,9 @@ func (p *G1Affine) setBytes(buf []byte, subGroupCheck bool) (int, error) {
 		return 0, io.ErrShortBuffer
 	}
 
-	// most significant byte
-	mData := buf[0] & mMask
-
-	// check buffer size
-	if mData == mUncompressed {
-		if len(buf) < SizeOfG1AffineUncompressed {
-			return 0, io.ErrShortBuffer
-		}
-	}
-
-	// infinity encoded, we still check that the buffer is full of zeroes.
-	if mData == mCompressedInfinity {
-		if !isZeroed(buf[0] & ^mMask, buf[1:SizeOfG1AffineCompressed]) {
-			return 0, ErrInvalidInfinityEncoding
-		}
-		p.X.SetZero()
-		p.Y.SetZero()
-		return SizeOfG1AffineCompressed, nil
-	}
-
-	// uncompressed point
-	if mData == mUncompressed {
-		// read X and Y coordinates
-		if err := p.X.SetBytesCanonical(buf[:fp.Bytes]); err != nil {
-			return 0, err
-		}
-		if err := p.Y.SetBytesCanonical(buf[fp.Bytes : fp.Bytes*2]); err != nil {
-			return 0, err
-		}
-
-		// subgroup check
-		if subGroupCheck && !p.IsInSubGroup() {
-			return 0, errors.New("invalid point: subgroup check failed")
-		}
-
-		return SizeOfG1AffineUncompressed, nil
-	}
-
-	// we have a compressed coordinate
-	// we need to
-	// 	1. copy the buffer (to keep this method thread safe)
-	// 	2. we need to solve the curve equation to compute Y
-
 	var bufX [fp.Bytes]byte
 	copy(bufX[:fp.Bytes], buf[:fp.Bytes])
+	isNeg := bufX[0] & (1 << 7) != 0
 	bufX[0] &= ^mMask
 
 	// read X coordinate
@@ -919,6 +877,7 @@ func (p *G1Affine) setBytes(buf []byte, subGroupCheck bool) (int, error) {
 		return 0, err
 	}
 
+	// solve for y
 	var YSquared, Y fp.Element
 
 	YSquared.Square(&p.X).Mul(&YSquared, &p.X)
@@ -927,17 +886,9 @@ func (p *G1Affine) setBytes(buf []byte, subGroupCheck bool) (int, error) {
 		return 0, errors.New("invalid compressed coordinate: square root doesn't exist")
 	}
 
-	if Y.LexicographicallyLargest() {
-		// Y ">" -Y
-		if mData == mCompressedSmallest {
-			Y.Neg(&Y)
-		}
-	} else {
-		// Y "<=" -Y
-		if mData == mCompressedLargest {
-			Y.Neg(&Y)
-		}
-	}
+	if isNeg != Y.LexicographicallyLargest() {
+		Y.Neg(&Y)
+	} 
 
 	p.Y = Y
 
@@ -1123,63 +1074,13 @@ func (p *G2Affine) setBytes(buf []byte, subGroupCheck bool) (int, error) {
 		return 0, io.ErrShortBuffer
 	}
 
-	// most significant byte
-	mData := buf[0] & mMask
-
-	// check buffer size
-	/*if mData == mUncompressed {
-		if len(buf) < SizeOfG2AffineUncompressed {
-			return 0, io.ErrShortBuffer
-		}
-	}*/
-
-	// infinity encoded, we still check that the buffer is full of zeroes.
-	/*if mData == mCompressedInfinity {
-		if !isZeroed(buf[0] & ^mMask, buf[1:SizeOfG2AffineCompressed]) {
-			return 0, ErrInvalidInfinityEncoding
-		}
-		p.X.SetZero()
-		p.Y.SetZero()
-		return SizeOfG2AffineCompressed, nil
-	}*/
-
-	// uncompressed point
-	/*if mData == mUncompressed {
-		// read X and Y coordinates
-		// p.X.A1 | p.X.A0
-		if err := p.X.A1.SetBytesCanonical(buf[:fp.Bytes]); err != nil {
-			return 0, err
-		}
-		if err := p.X.A0.SetBytesCanonical(buf[fp.Bytes : fp.Bytes*2]); err != nil {
-			return 0, err
-		}
-		// p.Y.A1 | p.Y.A0
-		if err := p.Y.A1.SetBytesCanonical(buf[fp.Bytes*2 : fp.Bytes*3]); err != nil {
-			return 0, err
-		}
-		if err := p.Y.A0.SetBytesCanonical(buf[fp.Bytes*3 : fp.Bytes*4]); err != nil {
-			return 0, err
-		}
-
-		// subgroup check
-		if subGroupCheck && !p.IsInSubGroup() {
-			return 0, errors.New("invalid point: subgroup check failed")
-		}
-
-		return SizeOfG2AffineUncompressed, nil
-	}*/
-
-	// we have a compressed coordinate
-	// we need to
-	// 	1. copy the buffer (to keep this method thread safe)
-	// 	2. we need to solve the curve equation to compute Y
-
 	var bufX [fp.Bytes]byte
 	copy(bufX[:fp.Bytes], buf[:fp.Bytes])
+
+	isNeg := bufX[0] & (1 << 7) != 0
 	bufX[0] &= ^mMask
 
 	// read X coordinate
-	// p.X.A1 | p.X.A0
 	if err := p.X.A1.SetBytesCanonical(bufX[:fp.Bytes]); err != nil {
 		return 0, err
 	}
@@ -1187,6 +1088,7 @@ func (p *G2Affine) setBytes(buf []byte, subGroupCheck bool) (int, error) {
 		return 0, err
 	}
 
+	// solve for y
 	var YSquared, Y fptower.E2
 
 	YSquared.Square(&p.X).Mul(&YSquared, &p.X)
@@ -1196,16 +1098,8 @@ func (p *G2Affine) setBytes(buf []byte, subGroupCheck bool) (int, error) {
 	}
 	Y.Sqrt(&YSquared)
 
-	if Y.LexicographicallyLargest() {
-		// Y ">" -Y
-		if mData == mCompressedSmallest {
-			Y.Neg(&Y)
-		}
-	} else {
-		// Y "<=" -Y
-		if mData == mCompressedLargest {
-			Y.Neg(&Y)
-		}
+	if isNeg != Y.LexicographicallyLargest() {
+		Y.Neg(&Y)
 	}
 
 	p.Y = Y
